@@ -296,6 +296,10 @@
   }
   .nick-photo img { display: block; width: 100%; height: auto; border-radius: 2px; }
   .nick-block textarea { min-height: 90px; }
+
+  /* PART 1 안내 (신애 확정 2026-10-25) */
+  .part-title:has(+ .part-desc) { margin-bottom: 10px; }
+  .part-desc { font-size: 15px; font-weight: 500; line-height: 1.6; color: var(--ink-soft); margin-bottom: 28px; word-break: keep-all; }
   /* 제출 중 오버레이 */
   .submitting { opacity: 0.6; pointer-events: none; }
 </style>
@@ -367,6 +371,8 @@
   <!-- STEP 2: 성향 5문항 (2기-성향설문-문안.md 확정 v2) -->
   <section class="step" id="step-part1">
     <div class="part-tag">PART 1</div>
+    <div class="part-title">나는 어떤 자리에서 빛날까?</div>
+    <div class="part-desc">국악 공연 하나를 맡았다고 상상해 보세요.<br>정답은 없어요. 가장 먼저 마음이 가는 쪽을 골라 주세요.</div>
     <div class="q-block" data-q="q1" data-shuffle>
       <div class="q-text">1. 국악 공연 하나를 맡게 됐다. 첫날 밤, 잠 못 드는 이유는?</div>
       <label class="opt">"첫 곡부터 마지막 곡까지, 어떤 이야기로 엮지?"</label>
